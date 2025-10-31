@@ -1,5 +1,5 @@
 pipeline {
-    agent1 {label'love'}
+    agent {label'love'}
 
  tools {
      maven 'maven1'
@@ -8,7 +8,7 @@ pipeline {
     stages { 
         stage('clean workspace') {
             steps{
-                cleanws()
+                cleanWs()
             }
         }
         stage('git checkout'){
