@@ -1,10 +1,8 @@
 pipeline {
-    agent {label'love'}
-
+    agent any
  tools {
      maven 'maven1'
  }
-    
     stages { 
         stage('clean workspace') {
             steps{
