@@ -1,13 +1,21 @@
 pipeline {
-    agent any
+    agent1 {label'love'}
 
  tools {
-     jdk 'java17'
-     maven 'maven3.6'
+     maven 'maven1'
  }
     
-    stages {
-        
+    stages { 
+        stage('clean workspace') {
+            steps{
+                cleanws()
+            }
+        }
+        stage('git checkout'){
+            steps {
+                
+            }
+        }
         stage('Compile') {
             steps {
             sh  'mvn compile'
