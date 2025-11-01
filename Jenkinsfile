@@ -7,8 +7,10 @@ pipeline {
         stage ('clean workspace') {
             steps{
                 cleanWs()
+        
             }    
         }
+        
     }
     stage ('git checkout') {
         steps {
