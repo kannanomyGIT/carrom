@@ -7,12 +7,11 @@ pipeline {
         stage('clean workspace') {
             steps{
                 cleanWs()
-        
-            }    
+            }
+            
         }
-
     }
-    stage ('git checkout1') {
+    stage ('git checkout') {
         steps {
             git branch: 'main', url: 'https://github.com/kannanomyGIT/carrom.git'
         }
