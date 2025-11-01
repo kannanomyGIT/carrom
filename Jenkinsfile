@@ -4,15 +4,15 @@ pipeline {
         maven "maven1"
     }
     stages {
-        stage ('clean workspace') {
+        stage('clean workspace') {
             steps{
                 cleanWs()
         
             }    
         }
-        
+
     }
-    stage ('git checkout') {
+    stage ('git checkout1') {
         steps {
             git branch: 'main', url: 'https://github.com/kannanomyGIT/carrom.git'
         }
