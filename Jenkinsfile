@@ -4,11 +4,10 @@ pipeline {
         maven "maven1"
     }
     stages {
-        stage('clean workspace') {
+        stage ('clean workspace') {
             steps{
                 cleanWs()
-            }
-            
+            }    
         }
     }
     stage ('git checkout') {
